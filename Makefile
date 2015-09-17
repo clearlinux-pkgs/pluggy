@@ -1,4 +1,5 @@
 PKG_NAME := pluggy
-URL := https://pypi.python.org/packages/source/p/pluggy/pluggy-0.3.0.tar.gz
+URL := https://pypi.python.org/packages/source/p/pluggy/pluggy-0.3.1.tar.gz
+ARCHIVES :=
 
 include ../common/Makefile.common

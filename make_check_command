@@ -1,0 +1,1 @@
+py.test pluggy.py testing/test_pluggy.py
