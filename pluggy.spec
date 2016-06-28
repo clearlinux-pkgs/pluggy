@@ -4,7 +4,7 @@
 #
 Name     : pluggy
 Version  : 0.3.1
-Release  : 11
+Release  : 12
 URL      : https://pypi.python.org/packages/source/p/pluggy/pluggy-0.3.1.tar.gz
 Source0  : https://pypi.python.org/packages/source/p/pluggy/pluggy-0.3.1.tar.gz
 Summary  : plugin and hook calling mechanisms for python
