@@ -4,12 +4,13 @@
 #
 Name     : pluggy
 Version  : 0.4.0
-Release  : 18
+Release  : 19
 URL      : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Source0  : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Summary  : plugin and hook calling mechanisms for python
 Group    : Development/Tools
 License  : MIT
+Requires: pluggy-legacypython
 Requires: pluggy-python
 BuildRequires : pbr
 BuildRequires : pip
@@ -19,11 +20,26 @@ BuildRequires : setuptools
 
 %description
 Plugin registration and hook calling for Python
-===============================================
+        ===============================================
+        
+        This is the plugin manager as used by pytest but stripped
+        of pytest specific details.
+        
+        During the 0.x series this plugin does not have much documentation
+        except extensive docstrings in the pluggy.py module.
+
+%package legacypython
+Summary: legacypython components for the pluggy package.
+Group: Default
+
+%description legacypython
+legacypython components for the pluggy package.
+
 
 %package python
 Summary: python components for the pluggy package.
 Group: Default
+Requires: pluggy-legacypython
 
 %description python
 python components for the pluggy package.
@@ -37,7 +53,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1499708127
+export SOURCE_DATE_EPOCH=1505055855
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -47,7 +63,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test pluggy.py testing/test_pluggy.py
 %install
-export SOURCE_DATE_EPOCH=1499708127
+export SOURCE_DATE_EPOCH=1505055855
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -58,7 +74,10 @@ echo ----[ mark ]----
 %files
 %defattr(-,root,root,-)
 
-%files python
+%files legacypython
 %defattr(-,root,root,-)
 /usr/lib/python2*/*
+
+%files python
+%defattr(-,root,root,-)
 /usr/lib/python3*/*
