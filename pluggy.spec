@@ -4,13 +4,14 @@
 #
 Name     : pluggy
 Version  : 0.4.0
-Release  : 20
+Release  : 21
 URL      : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Source0  : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Summary  : plugin and hook calling mechanisms for python
 Group    : Development/Tools
 License  : MIT
 Requires: pluggy-legacypython
+Requires: pluggy-python3
 Requires: pluggy-python
 BuildRequires : pbr
 BuildRequires : pip
@@ -40,9 +41,18 @@ legacypython components for the pluggy package.
 Summary: python components for the pluggy package.
 Group: Default
 Requires: pluggy-legacypython
+Requires: pluggy-python3
 
 %description python
 python components for the pluggy package.
+
+
+%package python3
+Summary: python3 components for the pluggy package.
+Group: Default
+
+%description python3
+python3 components for the pluggy package.
 
 
 %prep
@@ -53,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505405959
+export SOURCE_DATE_EPOCH=1506868366
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -63,7 +73,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test pluggy.py testing/test_pluggy.py
 %install
-export SOURCE_DATE_EPOCH=1505405959
+export SOURCE_DATE_EPOCH=1506868366
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -79,5 +89,8 @@ echo ----[ mark ]----
 /usr/lib/python2*/*
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
