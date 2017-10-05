@@ -4,7 +4,7 @@
 #
 Name     : pluggy
 Version  : 0.4.0
-Release  : 21
+Release  : 22
 URL      : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Source0  : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Summary  : plugin and hook calling mechanisms for python
@@ -32,6 +32,7 @@ Plugin registration and hook calling for Python
 %package legacypython
 Summary: legacypython components for the pluggy package.
 Group: Default
+Requires: python-core
 
 %description legacypython
 legacypython components for the pluggy package.
@@ -50,6 +51,7 @@ python components for the pluggy package.
 %package python3
 Summary: python3 components for the pluggy package.
 Group: Default
+Requires: python3-core
 
 %description python3
 python3 components for the pluggy package.
@@ -63,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1506868366
+export SOURCE_DATE_EPOCH=1507164302
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -73,7 +75,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test pluggy.py testing/test_pluggy.py
 %install
-export SOURCE_DATE_EPOCH=1506868366
+export SOURCE_DATE_EPOCH=1507164302
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
