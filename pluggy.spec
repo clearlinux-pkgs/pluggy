@@ -4,7 +4,7 @@
 #
 Name     : pluggy
 Version  : 0.4.0
-Release  : 22
+Release  : 23
 URL      : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Source0  : https://pypi.debian.net/pluggy/pluggy-0.4.0.zip
 Summary  : plugin and hook calling mechanisms for python
