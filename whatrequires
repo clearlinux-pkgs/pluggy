@@ -22,6 +22,8 @@ Pillow
 PyWavelets
 PyYAML
 Pygments
+QtAwesome
+QtPy
 R
 R-IRkernel
 R-devtools
@@ -30,6 +32,7 @@ R-pbdZMQ
 R-roxygen2
 SDL2_image
 SQLAlchemy
+Send2Trash
 SocksiPy-branch
 Sphinx
 Tempita
@@ -40,6 +43,7 @@ WebOb
 WebTest
 Werkzeug
 Whoosh
+absl-py
 accountsservice
 acme
 adwaita-icon-theme
@@ -49,6 +53,7 @@ alsa-utils
 ansible
 apache-ant
 apache-hadoop
+apache-spark
 apache-zookeeper
 apipkg
 appdirs
@@ -93,8 +98,11 @@ cffi
 chardet
 cheese
 chrome-gnome-shell
+clamav
 click
+cloudpickle
 clr-boot-manager
+clr-init
 clutter
 clutter-gst
 clutter-gtk
@@ -107,6 +115,7 @@ comedilib
 compat-libwebp-soname6
 compat-llvm-soname4
 compat-opencv-soname32
+compat-opencv-soname33
 component
 compute-image-packages
 configobj
@@ -149,6 +158,7 @@ exo
 extras
 faba-icon-theme
 farstream
+fasteners
 file
 file-roller
 filesystem
@@ -165,9 +175,11 @@ garcon
 gcab
 gcr
 gcs-oauth2-boto-plugin
+gdal
 gdk-pixbuf
 gdm
 geany
+geany-plugins
 gedit
 gensim
 geoclue
@@ -189,6 +201,7 @@ gnome-desktop
 gnome-font-viewer
 gnome-online-accounts
 gnome-panel
+gnome-screenshot
 gnome-session
 gnome-settings-daemon
 gnome-shell
@@ -226,6 +239,7 @@ html5lib
 httplib2
 httpretty
 hypothesis
+i2c-tools
 ibus
 icalendar
 icdiff
@@ -245,7 +259,6 @@ iso8601
 isort
 ister
 itstool
-javapackages-tools
 jedi
 jedi-vim
 jmespath
@@ -291,6 +304,7 @@ libgudev
 libgusb
 libgweather
 libidn
+libinput
 libjpeg-turbo
 libjpeg-turbo-soname8
 libmediaart
@@ -317,7 +331,6 @@ libwnck3
 libxfce4ui
 libxfce4util
 libxklavier
-libxml2
 linecache2
 linux
 linux-aws
@@ -327,6 +340,7 @@ linux-hyperv-lts
 linux-hyperv-mini
 linux-kvm
 linux-lts
+linux-pk414
 linux-tools
 llvm
 llvmlite
@@ -343,6 +357,7 @@ meson
 metacity
 mido
 mistune
+mkosi
 mod_wsgi
 moka-icon-theme
 mozjs
@@ -371,6 +386,7 @@ notmuch
 numactl
 numba
 numpy
+numpydoc
 oauth2client
 offlineimap
 olefile
@@ -394,7 +410,6 @@ pecan
 pep8
 persistent
 pexpect
-php
 pickleshare
 pip
 pluggy
@@ -414,6 +429,7 @@ pyOpenSSL
 pyaml
 pyasn1
 pyasn1-modules
+pycairo
 pycodestyle
 pycparser
 pycrypto
@@ -426,8 +442,8 @@ pygobject
 pyliblzma
 pylint
 pynacl
+pypandoc
 pyparsing
-pypy
 pyquery
 pyrfc3339
 pyserial
@@ -462,8 +478,8 @@ pywbem
 pyxdg
 pyzmq
 qemu
-qt-everywhere-opensource-src
 qtconsole
+qtimageformats
 quilt
 recordproto
 redis
@@ -471,11 +487,11 @@ requests
 rest
 retry_decorator
 retype
+rope
 rsa
 s3transfer
 samba
 satyr
-scala
 scikit-build
 scikit-image
 scikit-learn
@@ -494,11 +510,13 @@ simplejson
 six
 smart_open
 snowballstemmer
+sos
 sphinxcontrib-newsfeed
 sphinxcontrib-websupport
 spice
 spice-gtk
 spice-protocol
+spyder-notebook
 sqlparse
 sshfs
 subunit
@@ -517,6 +535,7 @@ testresources
 testscenarios
 testtools
 tflearn
+tiff
 tigervnc
 tornado
 totem
@@ -567,6 +586,7 @@ xorg-server
 xproto
 xtrans
 yasm
+yelp
 yelp-tools
 yelp-xsl
 yum-metadata-parser
