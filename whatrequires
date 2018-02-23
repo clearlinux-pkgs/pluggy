@@ -83,10 +83,12 @@ bind-utils
 bkcharts
 bleach
 bokeh
+borgbackup
 boto
 boto3
 botocore
 bz2file
+cached-property
 cairo
 catkin
 catkin_pkg
@@ -136,6 +138,7 @@ dbus-glib
 dconf
 deap
 decorator
+defusedxml
 diffoscope
 dnf
 dnf-plugins-core
@@ -185,6 +188,7 @@ gensim
 geoclue
 geocode-glib
 gevent
+gexiv2
 ghostscript
 gimp
 git
@@ -256,6 +260,7 @@ ipywidgets
 irrlicht
 isa-l
 iso8601
+isodate
 isort
 ister
 itstool
@@ -295,6 +300,7 @@ libcanberra
 libcroco
 libcryptui
 libdnf
+libdrm
 libgdata
 libglade
 libgnome-keyring
@@ -362,6 +368,7 @@ mod_wsgi
 moka-icon-theme
 mozjs
 mozjs38
+msgpack-python
 mutt
 mutter
 mypy
@@ -369,6 +376,7 @@ nasm
 nautilus
 nbconvert
 nbformat
+nbsphinx
 ndctl
 ndg_httpsclient
 neon
@@ -472,6 +480,7 @@ python-systemd
 python-tappy
 python-toml
 python-urwid
+python-zeep
 pytz
 pyudev
 pywbem
@@ -511,6 +520,7 @@ six
 smart_open
 snowballstemmer
 sos
+sphinx_rtd_theme
 sphinxcontrib-newsfeed
 sphinxcontrib-websupport
 spice
@@ -537,6 +547,7 @@ testtools
 tflearn
 tiff
 tigervnc
+toolbelt
 tornado
 totem
 totem-pl-parser
