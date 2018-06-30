@@ -4,7 +4,7 @@
 #
 Name     : pluggy
 Version  : 0.6.0
-Release  : 36
+Release  : 37
 URL      : https://pypi.debian.net/pluggy/pluggy-0.6.0.tar.gz
 Source0  : https://pypi.debian.net/pluggy/pluggy-0.6.0.tar.gz
 Summary  : plugin and hook calling mechanisms for python
@@ -16,6 +16,7 @@ Requires: pluggy-python
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-core
+BuildRequires : python3-core
 BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : setuptools-legacypython
@@ -75,12 +76,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1530322892
+export SOURCE_DATE_EPOCH=1530375749
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1530322892
+export SOURCE_DATE_EPOCH=1530375749
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/pluggy
 cp LICENSE %{buildroot}/usr/share/doc/pluggy/LICENSE
