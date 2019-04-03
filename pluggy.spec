@@ -4,7 +4,7 @@
 #
 Name     : pluggy
 Version  : 0.9.0
-Release  : 47
+Release  : 48
 URL      : https://files.pythonhosted.org/packages/a7/8c/55c629849c64e665258d8976322dfdad171fa2f57117590662d8a67618a4/pluggy-0.9.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a7/8c/55c629849c64e665258d8976322dfdad171fa2f57117590662d8a67618a4/pluggy-0.9.0.tar.gz
 Summary  : plugin and hook calling mechanisms for python
@@ -13,7 +13,6 @@ License  : MIT
 Requires: pluggy-license = %{version}-%{release}
 Requires: pluggy-python = %{version}-%{release}
 Requires: pluggy-python3 = %{version}-%{release}
-BuildRequires : buildreq-distutils23
 BuildRequires : buildreq-distutils3
 BuildRequires : python-core
 BuildRequires : setuptools-legacypython
@@ -24,15 +23,6 @@ BuildRequires : setuptools_scm-legacypython
 ====================================================
 pluggy - A minimalist production ready plugin system
 ====================================================
-
-%package legacypython
-Summary: legacypython components for the pluggy package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the pluggy package.
-
 
 %package license
 Summary: license components for the pluggy package.
@@ -68,27 +58,22 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554129936
-python2 setup.py build -b py2
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1554324501
+export MAKEFLAGS=%{?_smp_mflags}
+python3 setup.py build
 
 %install
-export SOURCE_DATE_EPOCH=1554129936
+export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pluggy
 cp LICENSE %{buildroot}/usr/share/package-licenses/pluggy/LICENSE
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files license
 %defattr(0644,root,root,0755)
