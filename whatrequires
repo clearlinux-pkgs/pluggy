@@ -43,6 +43,8 @@ coverage
 defusedxml
 deprecated-MarkupSafe
 deprecated-Sphinx
+deprecated-WebOb
+deprecated-Werkzeug
 deprecated-attrs
 deprecated-boto3
 deprecated-configparser
@@ -50,6 +52,10 @@ deprecated-coverage
 deprecated-glances
 deprecated-html5lib
 deprecated-mido
+deprecated-pyOpenSSL
+deprecated-sphinxcontrib-websupport
+deprecated-zope.testing
+deprecated-zope.testrunner
 distro
 django_compressor
 dnf
