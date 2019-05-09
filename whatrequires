@@ -63,6 +63,7 @@ dnf-plugins-core
 dockerpty
 dogpile.cache
 execnet
+fastnumbers
 flake8-deprecated
 flake8-docstrings
 fonttools
@@ -95,7 +96,9 @@ mido
 mod_wsgi
 more-itertools
 mypy
+natsort
 neon
+nltk
 nose-parameterized
 ntlm-auth
 numpy-stl
@@ -128,7 +131,6 @@ python-perf
 python-swiftclient
 python-tabulate
 python-tappy
-python-toml
 python-troveclient
 python-utils
 python-zeep
@@ -142,8 +144,10 @@ repoze.who
 requests-toolbelt
 retry
 scikit-build
+segno
 seqdiag
 serpent
+snitun
 soupsieve
 sphinx-feature-classification
 sphinxcontrib-applehelp
@@ -161,6 +165,8 @@ tblib
 tempora
 testresources
 texttable
+todoist
+toml
 tox
 waitress
 zVMCloudConnector

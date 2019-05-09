@@ -1,5 +1,5 @@
 PKG_NAME := pluggy
-URL = https://files.pythonhosted.org/packages/a7/8c/55c629849c64e665258d8976322dfdad171fa2f57117590662d8a67618a4/pluggy-0.9.0.tar.gz
+URL = https://files.pythonhosted.org/packages/0d/a1/862ab336e8128fde20981d2c1aa8506693412daf5083b1911d539412676b/pluggy-0.11.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
