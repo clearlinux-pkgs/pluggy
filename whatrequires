@@ -8,7 +8,6 @@ PyJWT
 PyMySQL
 PyNaCl
 PySocks
-Pyro4
 SQLAlchemy
 Sphinx
 WSGIProxy2
@@ -31,6 +30,7 @@ blockdiag
 borgbackup
 boto3
 cachetools
+ceph
 ceph-deploy
 certbot
 check-manifest
@@ -93,6 +93,7 @@ junit-xml
 jupyter-notebook-gist
 keystone
 khal
+koji
 lazy
 lazy-object-proxy
 libarchive-c
@@ -102,7 +103,6 @@ mod_wsgi
 more-itertools
 mypy
 natsort
-neon
 nose-parameterized
 ntlm-auth
 numpy-stl
@@ -120,6 +120,7 @@ pyblake2
 pybtex
 pydot_ng
 pyhs100
+pynvim
 pytest
 pytest-cov
 pytest-forked
@@ -150,6 +151,7 @@ requests-toolbelt
 retry
 scikit-build
 segno
+semantic_version
 seqdiag
 serpent
 snitun
@@ -175,6 +177,8 @@ todoist
 toml
 tox
 waitress
+webcolors
+wheel
 zVMCloudConnector
 zc.lockfile
 zipp
