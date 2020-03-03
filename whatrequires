@@ -39,9 +39,7 @@ cheroot
 click
 cloudpickle
 cmd2
-compute-image-packages
 conda
-configparser
 cotyledon
 coverage
 defusedxml
@@ -93,14 +91,15 @@ nose-parameterized
 ntlm-auth
 numpy-stl
 os-xenapi
-oslo.upgradecheck
 packaging
 parso
 patsy
+pep517
 performance
 persistent
 piglit
 portend
+prompt_toolkit
 pyOpenSSL
 pyblake2
 pybtex
@@ -144,7 +143,6 @@ seqdiag
 serpent
 snitun
 soupsieve
-sphinx-feature-classification
 sphinxcontrib-applehelp
 sphinxcontrib-devhelp
 sphinxcontrib-htmlhelp
@@ -154,7 +152,6 @@ sphinxcontrib-qthelp
 sphinxcontrib-serializinghtml
 sphinxcontrib-spelling
 sphinxcontrib-websupport
-stestr
 sure
 tblib
 tempest
