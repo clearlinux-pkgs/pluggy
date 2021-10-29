@@ -4,7 +4,7 @@
 #
 Name     : pluggy
 Version  : 1.0.0
-Release  : 74
+Release  : 75
 URL      : https://files.pythonhosted.org/packages/a1/16/db2d7de3474b6e37cbb9c008965ee63835bba517e22cdb8c35b5116b5ce1/pluggy-1.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a1/16/db2d7de3474b6e37cbb9c008965ee63835bba517e22cdb8c35b5116b5ce1/pluggy-1.0.0.tar.gz
 Summary  : plugin and hook calling mechanisms for python
